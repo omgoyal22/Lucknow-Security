@@ -93,12 +93,20 @@ export function ServicesSection() {
               Our experienced team can design a tailored security plan that meets your specific requirements and budget.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+              <a 
+                href="https://wa.me/917309669000" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors inline-block text-center"
+              >
                 Get Free Consultation
-              </button>
-              <button className="border border-border px-8 py-3 rounded-lg font-semibold hover:bg-muted transition-colors">
+              </a>
+              <a 
+                href="/services" 
+                className="border border-border px-8 py-3 rounded-lg font-semibold hover:bg-muted transition-colors inline-block text-center"
+              >
                 View All Services
-              </button>
+              </a>
             </div>
           </div>
         </div>

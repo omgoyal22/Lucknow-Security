@@ -38,9 +38,12 @@ export function Header() {
             <a href="/training" className="hover:opacity-80 transition-opacity">
               Training
             </a>
-            <Button variant="secondary" size="sm">
-              Contact Us
-            </Button>
+            <a href="/client-reviews" className="hover:opacity-80 transition-opacity">
+              Client Reviews
+            </a>
+             <a href="/contact" className="hover:opacity-80 transition-opacity">
+              Contact
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -70,9 +73,12 @@ export function Header() {
               <a href="/training" className="hover:opacity-80 transition-opacity">
                 Training
               </a>
-              <Button variant="secondary" size="sm" className="w-fit">
-                Contact Us
-              </Button>
+              <a href="/client-reviews" className="hover:opacity-80 transition-opacity">
+                Client Reviews
+              </a>
+              <a href="/contact" className="hover:opacity-80 transition-opacity">
+                Contact
+              </a>
             </div>
           </nav>
         )}

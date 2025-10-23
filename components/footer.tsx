@@ -25,11 +25,11 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="text-primary-foreground/60" />
-                <span className="text-sm">+91 (XXX) XXX-XXXX</span>
+                <span className="text-sm">+91 7309669000</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="text-primary-foreground/60" />
-                <span className="text-sm">info@lucknowsecurity.com</span>
+                <span className="text-sm">info@lucknowintelligence.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin size={18} className="text-primary-foreground/60" />
@@ -126,8 +126,11 @@ export function Footer() {
               <a href="#" className="hover:text-primary-foreground transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="hover:text-primary-foreground transition-colors">
+              <a href="/contact" className="hover:text-primary-foreground transition-colors">
                 Contact
+              </a>
+              <a href="/careers" className="hover:text-primary-foreground transition-colors">
+                Careers
               </a>
             </div>
           </div>
