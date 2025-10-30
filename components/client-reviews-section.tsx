@@ -17,7 +17,7 @@ const clientReviews = [
   },
   {
     id: 2,
-    clientName: "Glodee Masala, Kanpur",
+    clientName: "Goldee Masala, Kanpur",
     location: "Kanpur, Uttar Pradesh",
     industry: "Food Processing",
     rating: 5,
