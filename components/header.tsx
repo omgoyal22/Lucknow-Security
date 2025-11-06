@@ -39,7 +39,7 @@ export function Header() {
               Training
             </a>
             <a href="/client-reviews" className="hover:opacity-80 transition-opacity">
-              Client Reviews
+              Clients
             </a>
              <a href="/contact" className="hover:opacity-80 transition-opacity">
               Contact

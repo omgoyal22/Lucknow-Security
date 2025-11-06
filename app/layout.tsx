@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { FloatingContactButtons } from "@/components/floating-contact-buttons"
+import { SplashWrapper } from "@/components/splash-wrapper"
 import { Suspense } from "react"
 import "./globals.css"
 
@@ -21,9 +22,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                if (typeof document !== 'undefined') {
+                  document.documentElement.style.visibility = 'hidden';
+                  var style = document.createElement('style');
+                  style.setAttribute('data-splash-block', 'true');
+                  style.textContent = 'body > *:not(script):not(style) { opacity: 0 !important; visibility: hidden !important; }';
+                  document.head.appendChild(style);
+                }
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
-        <Suspense fallback={null}>{children}</Suspense>
-        <FloatingContactButtons />
+        <SplashWrapper>
+          <Suspense fallback={null}>{children}</Suspense>
+          <FloatingContactButtons />
+        </SplashWrapper>
         <Analytics />
       </body>
     </html>

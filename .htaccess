@@ -1,0 +1,26 @@
+# ============================================================================
+# Minimal .htaccess for Next.js static export on shared cPanel (safe defaults)
+# Place this at your document root (same folder as index.html)
+# ----------------------------------------------------------------------------
+
+# Use index.html by default
+DirectoryIndex index.html
+
+# Enable clean URLs -> .html
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Serve existing files and directories as-is
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # If no extension, try the same path with .html (e.g., /about -> /about.html)
+  RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{1,5}$
+  RewriteRule ^(.+)$ $1.html [L]
+</IfModule>
+
+# Custom 404 page from export
+ErrorDocument 404 /404.html
+

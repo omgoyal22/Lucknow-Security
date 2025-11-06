@@ -124,3 +124,24 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Hide content when splash is active */
+  body.splash-active > *:not(script) {
+    visibility: hidden;
+    overflow: hidden;
+  }
+}

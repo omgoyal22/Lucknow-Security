@@ -13,7 +13,7 @@ const clientReviews = [
     rating: 5,
     review: "Lucknow Intelligence Security has provided exceptional security services for our sacred premises. Their professional approach and dedication to maintaining a safe environment for devotees has been outstanding. The team's respect for the religious sanctity while ensuring security is commendable.",
     services: ["24/7 Security", "Crowd Management", "VIP Protection"],
-    image: "/placeholder.jpg"
+    image: "/rammandir.jpeg"
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const clientReviews = [
     rating: 5,
     review: "We have been working with Lucknow Intelligence Security for over 2 years. Their security personnel are well-trained and understand the specific needs of our food processing facility. They ensure the safety of our employees and protect our valuable equipment and inventory.",
     services: ["Industrial Security", "Access Control", "Surveillance"],
-    image: "/placeholder.jpg"
+    image: "/goldieemasale.png"
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const clientReviews = [
     rating: 5,
     review: "The security services provided by Lucknow Intelligence Security have been exemplary. Their team ensures the safety of our showroom, service center, and customer vehicles. Their professional conduct and reliability have made them an integral part of our operations.",
     services: ["Showroom Security", "Vehicle Protection", "Customer Safety"],
-    image: "/placeholder.jpg"
+    image: "/maruti.png"
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const clientReviews = [
     rating: 5,
     review: "Outstanding security services! The team understands the automotive industry's unique security challenges. They provide round-the-clock protection for our showroom and ensure a safe environment for our customers and staff. Highly professional and reliable.",
     services: ["24/7 Security", "Customer Safety", "Asset Protection"],
-    image: "/placeholder.jpg"
+    image: "/hyundai.png"
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ const clientReviews = [
     rating: 5,
     review: "Healthcare security requires special expertise, and Lucknow Intelligence Security delivers exactly that. Their team ensures patient safety, protects medical equipment, and maintains a secure environment for our healthcare professionals. Their understanding of hospital protocols is impressive.",
     services: ["Patient Safety", "Medical Equipment Security", "Emergency Response"],
-    image: "/placeholder.jpg"
+    image: "/grandhospital.png"
   },
   {
     id: 6,
@@ -74,10 +74,10 @@ export function ClientReviewsSection() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Client Reviews
+            Clients
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Hear from our valued clients across various industries about their experience with our security services
+            Our trusted clients across various industries who rely on our professional security services
           </p>
         </div>
 
@@ -104,8 +104,16 @@ export function ClientReviewsSection() {
               <CardContent className="p-6">
                 {/* Client Info */}
                 <div className="flex items-start space-x-4 mb-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                    <Building className="w-6 h-6 text-blue-600" />
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center overflow-hidden flex-shrink-0 ${review.image && review.image !== "/placeholder.jpg" ? "" : "bg-blue-100"}`}>
+                    {review.image && review.image !== "/placeholder.jpg" ? (
+                      <img 
+                        src={review.image} 
+                        alt={review.clientName}
+                        className="w-full h-full object-contain"
+                      />
+                    ) : (
+                      <Building className="w-6 h-6 text-blue-600" />
+                    )}
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-gray-900 text-lg">{review.clientName}</h3>
