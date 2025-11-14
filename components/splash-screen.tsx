@@ -26,7 +26,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
     
     // Start fade out after total time
     const animationTime = 1500 // 1.5 seconds for all animations to complete
-    const visibleTime = 6000 // 6 seconds to keep logo visible and sustained
+    const visibleTime = 1000 // 6 seconds to keep logo visible and sustained
     const totalTime = animationTime + visibleTime
     
     const fadeOutTimer = setTimeout(() => {
