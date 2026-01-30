@@ -64,6 +64,66 @@ const clientReviews = [
     review: "Exceptional security services for our hotel! The team ensures guest safety while maintaining the welcoming atmosphere of our establishment. Their professional approach and attention to detail have earned the trust of our guests and staff. Highly recommended for hospitality security.",
     services: ["Guest Safety", "Hotel Security", "VIP Protection"],
     image: "/placeholder.jpg"
+  },
+  {
+    id: 7,
+    clientName: "Puneet Tata Motors",
+    location: "Azamgarh, Uttar Pradesh",
+    industry: "Automotive",
+    rating: 5,
+    review: "Lucknow Intelligence Security provides reliable security for our Tata Motors showroom. Their team ensures the safety of our premises, vehicles, and customers with professionalism and dedication.",
+    services: ["24/7 Security", "Showroom Security", "Vehicle Protection"],
+    image: "/tatalogo.jpg"
+  },
+  {
+    id: 8,
+    clientName: "Puneet Tata Motors",
+    location: "Ballia, Uttar Pradesh",
+    industry: "Automotive",
+    rating: 5,
+    review: "Outstanding security services for our Tata Motors dealership. The team's professional approach and commitment to safety have made them an integral part of our operations.",
+    services: ["24/7 Security", "Showroom Security", "Customer Safety"],
+    image: "/tatalogo.jpg"
+  },
+  {
+    id: 9,
+    clientName: "Puneet Tata Motors",
+    location: "Mau, Uttar Pradesh",
+    industry: "Automotive",
+    rating: 5,
+    review: "We trust Lucknow Intelligence Security for our Tata Motors showroom. Their well-trained personnel ensure round-the-clock protection and a safe environment for our staff and customers.",
+    services: ["Industrial Security", "Access Control", "Surveillance"],
+    image: "/tatalogo.jpg"
+  },
+  {
+    id: 10,
+    clientName: "Puneet Tata Motors",
+    location: "Jaunpur, Uttar Pradesh",
+    industry: "Automotive",
+    rating: 5,
+    review: "Exceptional security partnership. Lucknow Intelligence Security understands the automotive industry and delivers reliable protection for our showroom and assets. Highly recommended.",
+    services: ["24/7 Security", "Asset Protection", "Customer Safety"],
+    image: "/tatalogo.jpg"
+  },
+  {
+    id: 11,
+    clientName: "Bright4Wheels, Maruti Suzuki",
+    location: "Prayagraj, Uttar Pradesh",
+    industry: "Automotive",
+    rating: 5,
+    review: "Professional security services for our Maruti Suzuki dealership. The team ensures the safety of our showroom, service center, and customer vehicles with consistent excellence.",
+    services: ["Showroom Security", "Vehicle Protection", "24/7 Security"],
+    image: "/Maruti-Suzuki-Logo.jpg"
+  },
+  {
+    id: 12,
+    clientName: "Bright4Wheels, Maruti Suzuki",
+    location: "Pratapgarh, Uttar Pradesh",
+    industry: "Automotive",
+    rating: 5,
+    review: "Reliable and professional security from Lucknow Intelligence Security. Their dedication to protecting our Maruti Suzuki dealership has made them a trusted partner in our operations.",
+    services: ["24/7 Security", "Customer Safety", "Asset Protection"],
+    image: "/Maruti-Suzuki-Logo.jpg"
   }
 ]
 
